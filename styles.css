@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    background-color: yellow;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.animal {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+
+.animal img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.animal:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set the width to 50% to cover half of the image */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background: rgba(255, 255, 0, 0.5); /* Yellow background with 50% opacity */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.animal:hover .overlay {
+    opacity: 1;
+}
+
+.shop-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.shop-button:hover {
+    background-color: #0056b3;
+}
+.animal#animal2 img {
+    border-radius: 50%; /* Make the image circular */
+}

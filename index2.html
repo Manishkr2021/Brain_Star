@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Showcase</title>
+    <style>
+        .clothes-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .clothes-item {
+            position: relative;
+            width: 200px;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .clothes-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .clothes-item .hover-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .clothes-item:hover .hover-content {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="clothes-container">
+        <div class="clothes-item">
+            <img src="shorts.jpg" alt="Clothes 1">
+            <div class="hover-content">
+                <p>BOYFRIEND</p>
+                <p><b>BOXER</b></p>
+                <p>Rs: 2500</p>
+            </div>
+        </div>
+        <div class="clothes-item">
+            <img src="loosepant.jpg" alt="Clothes 2">
+            <div class="hover-content">
+                <p>BOYFRIEND</p>
+                <p><b>Loose Pant</b></p>
+                <p>Rs: 5250</p>
+            </div>
+        </div>
+        <div class="clothes-item">
+            <img src="tshirt.jpg" alt="Clothes 3">
+            <div class="hover-content">
+                <p>BOYFRIEND</p>
+                <p><b>T-Shirt</b></p>
+                <p>Rs: 4000</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
